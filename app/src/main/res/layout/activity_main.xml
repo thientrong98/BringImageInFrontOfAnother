@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:id="@+id/ll_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/imb_delete"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/_img_delete"
+                android:layout_gravity="center"
+                android:background="@null"/>
+            <ImageButton
+                android:id="@+id/imb_zoom_out"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:src="@drawable/img_zomom_out"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/img_left"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/a" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginLeft="10dp">
+        <LinearLayout
+            android:id="@+id/ll_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/imb_delete_2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/_img_delete"
+                android:layout_gravity="center"
+                android:background="@null"/>
+            <ImageButton
+                android:id="@+id/imb_zoom_out_2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:src="@drawable/img_zomom_out"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/img_right"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/a" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
